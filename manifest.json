@@ -1,0 +1,22 @@
+{
+  "name": "Nodal",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "No more modals.",
+  "homepage_url": "https://github.com/kevinwuhoo/nodal",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+ "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["nodal.js"]
+    }
+  ],
+  "permissions": [
+    "http://*/*",
+    "https://*/*"
+  ]
+}
